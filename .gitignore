@@ -1,0 +1,13 @@
+# Compiled Java classes
+out/
+*.class
+
+# IntelliJ IDEA (module files kept, workspace/user files ignored)
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/shelf/
+*.iws
+
+# OS
+.DS_Store
