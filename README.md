@@ -13,6 +13,11 @@ bloco1/
 ├── aula1/estrutudaDados/   # Funções, Somatórios e Indução Matemática
 ├── aula2/estrutudaDados/   # Corretude de Algoritmos Iterativos e Recursivos
 ├── aula3/estrutudaDados/   # Análise Assintótica e Algoritmos Iterativos
+├── aula4/estrutudaDados/   # Análise Assintótica e Algoritmos Recursivos
+├── aula6/estrutudaDados/   # Lista Ligada, Pilha e Fila
+├── aula7/estrutudaDados/   # Árvores Binárias e seus Percursos
+├── aula8/estrutudaDados/   # Árvores Binárias Balanceadas e Filas de Prioridade
+├── aula9/estrutudaDados/   # Algoritmos em Grafos
 └── provas/
     ├── p1/estrutudaDados/  # P1 — Plano de Reflorestamento Sustentável com Drones
     └── p2/estrutudaDados/  # P2 — Estruturas de Dados na Linha de Produção (BigO Motors)
