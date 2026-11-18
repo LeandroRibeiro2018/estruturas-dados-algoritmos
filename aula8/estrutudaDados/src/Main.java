@@ -13,6 +13,7 @@ public class Main {
     private static final int[] HEAP_SLIDES = {16, 14, 10, 8, 7, 9, 3, 2, 4, 1};
 
     public static void main(String[] args) {
+        Ritmo.instalar();
         if (args.length > 0) {
             executarOpcaoUnica(args[0]);
             return;
@@ -24,6 +25,9 @@ public class Main {
             opcao = lerInteiro("Escolha um exercicio: ");
             try {
                 executar(opcao);
+                if (opcao != 0) {
+                    pausar("\n[ENTER] para voltar ao menu...");
+                }
             } catch (IllegalArgumentException e) {
                 System.out.println("Entrada invalida: " + e.getMessage());
             }
@@ -57,6 +61,7 @@ public class Main {
     private static void executar(int opcao) {
         if (opcao != 0) {
             exibirDescricao(opcao);
+            pausar("\n[ENTER] para executar o exercicio...");
         }
         switch (opcao) {
             case 1 -> exercicio1();
@@ -323,6 +328,16 @@ public class Main {
             return Integer.parseInt(valor);
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException("Valor numerico invalido: '" + valor + "'.");
+        }
+    }
+
+    /** No modo passo a passo (Ritmo), espera ENTER antes de seguir. */
+    private static void pausar(String mensagem) {
+        if (Ritmo.ativo()) {
+            System.out.print(mensagem);
+            if (scanner.hasNextLine()) {
+                scanner.nextLine();
+            }
         }
     }
 }

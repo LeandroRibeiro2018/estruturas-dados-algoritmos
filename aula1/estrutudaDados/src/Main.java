@@ -7,6 +7,7 @@ public class Main {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        Ritmo.instalar();
         // Se um argumento for informado (ex.: "java Main 2"), ele apenas seleciona
         // o exercicio. Os inputs pertinentes de cada exercicio sao sempre pedidos
         // interativamente pelo teclado logo em seguida.
@@ -22,6 +23,9 @@ public class Main {
 
             try {
                 executar(opcao);
+                if (opcao != 0) {
+                    pausar("\n[ENTER] para voltar ao menu...");
+                }
             } catch (IllegalArgumentException e) {
                 System.out.println("Entrada invalida: " + e.getMessage());
             }
@@ -53,6 +57,7 @@ public class Main {
     private static void executar(int opcao) {
         if (opcao != 0) {
             exibirDescricao(opcao);
+            pausar("\n[ENTER] para executar o exercicio...");
         }
         switch (opcao) {
             case 1 -> calcularDesconto();
@@ -261,5 +266,15 @@ public class Main {
     private static String lerTexto(String mensagem) {
         System.out.print(mensagem);
         return scanner.next();
+    }
+
+    /** No modo passo a passo (Ritmo), espera ENTER antes de seguir. */
+    private static void pausar(String mensagem) {
+        if (Ritmo.ativo()) {
+            System.out.print(mensagem);
+            if (scanner.hasNextLine()) {
+                scanner.nextLine();
+            }
+        }
     }
 }
