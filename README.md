@@ -19,6 +19,7 @@ bloco1/
 ├── aula8/estrutudaDados/   # Árvores Binárias Balanceadas e Filas de Prioridade
 ├── aula9/estrutudaDados/   # Algoritmos em Grafos
 ├── aula11/estrutudaDados/  # Algoritmos Gulosos
+├── aula12/estrutudaDados/  # Programação Dinâmica
 ├── provas/
 │   ├── p1/estrutudaDados/  # P1 — Plano de Reflorestamento Sustentável com Drones
 │   └── p2/estrutudaDados/  # P2 — Estruturas de Dados na Linha de Produção (BigO Motors)
@@ -39,6 +40,7 @@ bloco1/
 | [aula8](aula8/README.md) | Árvores Balanceadas e Filas de Prioridade | AVL (RD, RE, RED, RDE), heap, Heap Sort |
 | [aula9](aula9/README.md) | Algoritmos em Grafos | matriz/lista de adjacência, DFS, BFS, Euler, Hamilton |
 | [aula11](aula11/README.md) | Algoritmos Gulosos | troco, mochila fracionária x 0-1, Dijkstra, Kruskal + Union-Find |
+| [aula12](aula12/README.md) | Programação Dinâmica | Fibonacci e mochila 0-1 (recursivo x memoization x tabulation), Bellman-Ford |
 | [p1](provas/p1/README.md) | Prova P1 | Plano de Reflorestamento Sustentável com Drones |
 | [p2](provas/p2/README.md) | Prova P2 | Estruturas de Dados na Linha de Produção (BigO Motors) |
 

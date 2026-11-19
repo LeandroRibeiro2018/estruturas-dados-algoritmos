@@ -31,6 +31,7 @@ $modulos = [ordered]@{
     'aula8' = @{ Pasta = 'aula8';     Titulo = 'Árvores Balanceadas (AVL) e Filas de Prioridade (Heap)' }
     'aula9' = @{ Pasta = 'aula9';     Titulo = 'Algoritmos em Grafos' }
     'aula11' = @{ Pasta = 'aula11';   Titulo = 'Algoritmos Gulosos (troco, mochila, Dijkstra, Kruskal)' }
+    'aula12' = @{ Pasta = 'aula12';   Titulo = 'Programação Dinâmica (Fibonacci, mochila 0-1, Bellman-Ford)' }
     'p1'    = @{ Pasta = 'provas\p1'; Titulo = 'Prova P1 — Reflorestamento Sustentável com Drones' }
     'p2'    = @{ Pasta = 'provas\p2'; Titulo = 'Prova P2 — Estruturas de Dados na Linha de Produção' }
 }

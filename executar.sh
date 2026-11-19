@@ -14,8 +14,8 @@ ritmo="${RITMO_MS:-300}"
 
 raiz="$(cd "$(dirname "$0")" && pwd)"
 
-chaves=(aula1 aula2 aula3 aula4 aula6 aula7 aula8 aula9 aula11 p1 p2)
-pastas=(aula1 aula2 aula3 aula4 aula6 aula7 aula8 aula9 aula11 provas/p1 provas/p2)
+chaves=(aula1 aula2 aula3 aula4 aula6 aula7 aula8 aula9 aula11 aula12 p1 p2)
+pastas=(aula1 aula2 aula3 aula4 aula6 aula7 aula8 aula9 aula11 aula12 provas/p1 provas/p2)
 titulos=(
     "Funções, Somatórios e Indução Matemática"
     "Corretude de Algoritmos Iterativos e Recursivos"
@@ -26,6 +26,7 @@ titulos=(
     "Árvores Balanceadas (AVL) e Filas de Prioridade (Heap)"
     "Algoritmos em Grafos"
     "Algoritmos Gulosos (troco, mochila, Dijkstra, Kruskal)"
+    "Programação Dinâmica (Fibonacci, mochila 0-1, Bellman-Ford)"
     "Prova P1 — Reflorestamento Sustentável com Drones"
     "Prova P2 — Estruturas de Dados na Linha de Produção"
 )
